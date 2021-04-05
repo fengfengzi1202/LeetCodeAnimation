@@ -32,7 +32,7 @@
 
 我们可以设想假设设定了双指针`p`和`q`的话，当`q`指向末尾的`NULL`，`p`与`q`之间相隔的元素个数为`n`时，那么删除掉`p`的下一个指针就完成了要求。
 
-- 设置虚拟节点`dummyHead`指向`head`
+- 设置虚拟节点`dummyHead` 【dummy 假】指向`head`
 - 设定双指针`p`和`q`，初始都指向虚拟节点`dummyHead`
 - 移动`q`，直到`p`与`q`之间相隔的元素个数为`n`
 - 同时移动`p`与`q`，直到`q`指向的为`NULL`
@@ -45,7 +45,7 @@
 ### 代码实现
 
 ```
-class Solution {
+class Solution02 {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
      ListNode* dummyHead = new ListNode(0);

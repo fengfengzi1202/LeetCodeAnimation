@@ -41,7 +41,7 @@
 ### 代码实现
 
 ```
-class Solution {
+class Solution02 {
 public:
     vector<int> rightSideView(TreeNode *root) {
         vector<int> res;
